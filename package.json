@@ -1,0 +1,20 @@
+{
+  "name": "hwleach",
+  "version": "1.0.0",
+  "description": "Node module to access Honeywell(c) home comfort thermostat",
+  "main": "hwleach.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Damon L Vincent",
+    "email": "damon@ourcomputershop.com",
+    "url": "https://github.com/darsys"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "config": "^3.2.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}

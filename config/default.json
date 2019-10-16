@@ -1,0 +1,7 @@
+{
+    "honeywell" : {
+        "user": "email@honeywellaccount.com",
+        "password": "myhoneywellpassword",
+        "did": "1234567"
+    }
+}
