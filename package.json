@@ -1,8 +1,8 @@
 {
-  "name": "hwleach",
+  "name": "honeywellleach",
   "version": "1.0.0",
   "description": "Node module to access Honeywell(c) home comfort thermostat",
-  "main": "hwleach.js",
+  "main": "honeywellleach.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
