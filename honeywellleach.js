@@ -27,7 +27,7 @@ var hwControlOptions = {
     DeviceID: honeyDID,
     // FanMode: null,
     // HeatNextPeriod: null,
-    // HeatSetpoint: 58,
+    HeatSetpoint: 58,
     // StatusCool: 1,
     // StatusHeat: 1,
     // SystemSwitch: null
@@ -47,6 +47,10 @@ var hwQuery = {
     }
 }
 
+for (let j = 2; j < process.argv.length; j++) {
+  console.log(j + ' -> ' + (process.argv[j]));
+}
+
 rp(hwLoginOptions)
   .then(function (hwReply) {
     console.log("Received login reply.")
@@ -55,7 +59,7 @@ rp(hwLoginOptions)
         console.log("Received second reply.")
         var myData = JSON.parse(hwResponse)
         console.log("Current temp: " + myData.latestData.uiData.DispTemperature)
-        console.log("Current heat setpoing: " + myData.latestData.uiData.HeatSetpoint)
+        console.log("Current heat setpoint: " + myData.latestData.uiData.HeatSetpoint)
       })
       .catch(function (err) {
         console.log(err.error)
